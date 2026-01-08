@@ -1,42 +1,26 @@
 {
   "name": "liskl-metaskills",
-  "version": "1.0.0",
-  "description": "A collection of metaskills for collaborative discovery, PRD creation, and skill building",
   "owner": {
     "name": "Loren Lisk",
-    "github": "liskl"
+    "email": "loren@lisk.org"
   },
-  "repository": "https://github.com/liskl/claude-marketplace",
+  "metadata": {
+    "description": "A collection of metaskills for collaborative discovery, PRD creation, and skill building",
+    "version": "1.0.0"
+  },
   "plugins": [
     {
-      "name": "explore",
-      "source": "commands/explore.md",
-      "description": "Collaborative discovery for new projects or features. Use when starting something new.",
-      "category": "discovery"
-    },
-    {
-      "name": "create-prd",
-      "source": "commands/create-prd.md",
-      "description": "Guides collaborative PRD creation from ideas of any fidelity. Use when starting a new feature, project, or spec.",
-      "category": "planning"
-    },
-    {
-      "name": "skill-builder",
-      "source": "commands/skill-builder.md",
-      "description": "Interview-driven skill/command generator for domain experts.",
-      "category": "meta"
+      "name": "metaskills",
+      "source": "..",
+      "description": "Metaskills for collaborative discovery, PRD creation, and skill building",
+      "version": "1.0.0",
+      "author": {
+        "name": "Loren Lisk"
+      },
+      "category": "productivity",
+      "keywords": ["skills", "commands", "prd", "discovery", "collaboration"],
+      "commands": "./commands",
+      "strict": false
     }
-  ],
-  "categories": {
-    "discovery": "Commands for exploring and understanding new projects",
-    "planning": "Commands for creating specifications and documentation",
-    "meta": "Commands that create other skills or commands"
-  },
-  "keywords": [
-    "skills",
-    "commands",
-    "prd",
-    "discovery",
-    "collaboration"
   ]
 }
