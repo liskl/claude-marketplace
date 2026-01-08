@@ -1,10 +1,13 @@
 {
-  "name": "claude-marketplace",
+  "name": "liskl-metaskills",
   "version": "1.0.0",
-  "description": "A collection of Claude Code metaskills for collaborative discovery, PRD creation, and skill building",
-  "author": "Loren Lisk",
+  "description": "A collection of metaskills for collaborative discovery, PRD creation, and skill building",
+  "owner": {
+    "name": "Loren Lisk",
+    "github": "liskl"
+  },
   "repository": "https://github.com/liskl/claude-marketplace",
-  "commands": [
+  "plugins": [
     {
       "name": "explore",
       "path": "commands/explore.md",
@@ -30,7 +33,6 @@
     "meta": "Commands that create other skills or commands"
   },
   "keywords": [
-    "claude-code",
     "skills",
     "commands",
     "prd",
