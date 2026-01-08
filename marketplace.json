@@ -1,0 +1,40 @@
+{
+  "name": "claude-marketplace",
+  "version": "1.0.0",
+  "description": "A collection of Claude Code metaskills for collaborative discovery, PRD creation, and skill building",
+  "author": "Loren Lisk",
+  "repository": "https://github.com/liskl/claude-marketplace",
+  "commands": [
+    {
+      "name": "explore",
+      "path": "commands/explore.md",
+      "description": "Collaborative discovery for new projects or features. Use when starting something new.",
+      "category": "discovery"
+    },
+    {
+      "name": "create-prd",
+      "path": "commands/create-prd.md",
+      "description": "Guides collaborative PRD creation from ideas of any fidelity. Use when starting a new feature, project, or spec.",
+      "category": "planning"
+    },
+    {
+      "name": "skill-builder",
+      "path": "commands/skill-builder.md",
+      "description": "Interview-driven skill/command generator for domain experts.",
+      "category": "meta"
+    }
+  ],
+  "categories": {
+    "discovery": "Commands for exploring and understanding new projects",
+    "planning": "Commands for creating specifications and documentation",
+    "meta": "Commands that create other skills or commands"
+  },
+  "keywords": [
+    "claude-code",
+    "skills",
+    "commands",
+    "prd",
+    "discovery",
+    "collaboration"
+  ]
+}
