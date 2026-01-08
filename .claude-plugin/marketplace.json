@@ -11,7 +11,10 @@
   "plugins": [
     {
       "name": "metaskills",
-      "source": "..",
+      "source": {
+        "source": "github",
+        "repo": "liskl/claude-marketplace"
+      },
       "description": "Metaskills for collaborative discovery, PRD creation, and skill building",
       "version": "1.0.0",
       "author": {
