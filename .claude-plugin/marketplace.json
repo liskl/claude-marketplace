@@ -10,19 +10,19 @@
   "plugins": [
     {
       "name": "explore",
-      "path": "commands/explore.md",
+      "source": "commands/explore.md",
       "description": "Collaborative discovery for new projects or features. Use when starting something new.",
       "category": "discovery"
     },
     {
       "name": "create-prd",
-      "path": "commands/create-prd.md",
+      "source": "commands/create-prd.md",
       "description": "Guides collaborative PRD creation from ideas of any fidelity. Use when starting a new feature, project, or spec.",
       "category": "planning"
     },
     {
       "name": "skill-builder",
-      "path": "commands/skill-builder.md",
+      "source": "commands/skill-builder.md",
       "description": "Interview-driven skill/command generator for domain experts.",
       "category": "meta"
     }
