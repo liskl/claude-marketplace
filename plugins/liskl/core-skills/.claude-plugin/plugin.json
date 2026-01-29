@@ -1,0 +1,22 @@
+{
+  "name": "core-skills",
+  "description": "14 essential skills for reliable Claude Code workflows: TDD, code review, planning, verification, brainstorming, and more",
+  "version": "1.0.0",
+  "author": {
+    "name": "liskl"
+  },
+  "repository": "https://github.com/liskl/claude-marketplace",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "tdd",
+    "test-driven-development",
+    "code-review",
+    "verification",
+    "workflow",
+    "planning",
+    "brainstorming",
+    "git-worktrees",
+    "quality"
+  ]
+}
