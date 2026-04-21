@@ -1,0 +1,88 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Software Laws Audit Findings",
+  "description": "Output of scripts/run_audit.py — structured signals merged from all scan_*.py scripts.",
+  "type": "object",
+  "required": ["repo", "generated_at", "languages", "scans", "warnings"],
+  "properties": {
+    "repo": {
+      "type": "string",
+      "description": "Absolute path to the audited repository."
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "is_git_repo": {
+      "type": "boolean"
+    },
+    "file_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "languages": {
+      "type": "object",
+      "description": "Map of language name to file count and total LOC.",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["files", "loc"],
+        "properties": {
+          "files": { "type": "integer", "minimum": 0 },
+          "loc": { "type": "integer", "minimum": 0 }
+        }
+      }
+    },
+    "scans": {
+      "type": "object",
+      "description": "Per-scan results keyed by scan name (e.g., 'complexity', 'bus_factor').",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["status", "signals"],
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": ["ok", "partial", "skipped", "error"]
+          },
+          "note": { "type": "string" },
+          "signals": {
+            "type": "array",
+            "description": "Individual evidence items.",
+            "items": {
+              "type": "object",
+              "required": ["law_hints", "severity", "summary"],
+              "properties": {
+                "law_hints": {
+                  "type": "array",
+                  "description": "Law slugs this signal is relevant to.",
+                  "items": { "type": "string" }
+                },
+                "severity": {
+                  "type": "string",
+                  "enum": ["info", "watch", "concern"]
+                },
+                "summary": { "type": "string" },
+                "file": { "type": "string" },
+                "line": { "type": "integer", "minimum": 1 },
+                "value": {
+                  "description": "Raw measurement (number, ratio, list of files, etc.)"
+                },
+                "threshold": {
+                  "description": "Threshold that triggered this signal."
+                }
+              }
+            }
+          },
+          "metrics": {
+            "type": "object",
+            "description": "Aggregate numeric metrics from this scan.",
+            "additionalProperties": true
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}

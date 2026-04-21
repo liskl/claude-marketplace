@@ -5,8 +5,8 @@
     "email": "loren@lisk.org"
   },
   "metadata": {
-    "description": "A collection of metaskills for collaborative discovery, PRD creation, and skill building",
-    "version": "1.0.0"
+    "description": "A collection of metaskills and auditing skills for collaborative discovery, PRD creation, skill building, and software engineering law audits",
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -15,14 +15,15 @@
         "source": "github",
         "repo": "liskl/claude-marketplace"
       },
-      "description": "Metaskills for collaborative discovery, PRD creation, and skill building",
-      "version": "1.0.0",
+      "description": "Metaskills for collaborative discovery, PRD creation, skill building, plus a software engineering laws audit",
+      "version": "1.1.0",
       "author": {
         "name": "Loren Lisk"
       },
       "category": "productivity",
-      "keywords": ["skills", "commands", "prd", "discovery", "collaboration"],
+      "keywords": ["skills", "commands", "prd", "discovery", "collaboration", "audit", "software-engineering-laws"],
       "commands": "./commands",
+      "skills": "./skills",
       "strict": false
     }
   ]
