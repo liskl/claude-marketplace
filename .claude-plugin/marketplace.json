@@ -5,8 +5,8 @@
     "email": "loren@lisk.org"
   },
   "metadata": {
-    "description": "A collection of metaskills for collaborative discovery, PRD creation, and skill building",
-    "version": "1.0.0"
+    "description": "A collection of metaskills for collaborative discovery, PRD creation, skill building, and software engineering law audits",
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -23,6 +23,23 @@
       "category": "productivity",
       "keywords": ["skills", "commands", "prd", "discovery", "collaboration"],
       "commands": "./commands",
+      "strict": false
+    },
+    {
+      "name": "software-eng-laws",
+      "source": {
+        "source": "git-subdir",
+        "url": "liskl/claude-marketplace",
+        "path": "plugins/software-eng-laws"
+      },
+      "description": "Audit a repository against 56 software engineering laws (Conway, Hyrum, DRY, CAP, etc.) and produce a per-law findings report with evidence citations and a scorecard",
+      "version": "1.0.0",
+      "author": {
+        "name": "Loren Lisk"
+      },
+      "category": "quality",
+      "keywords": ["audit", "software-engineering-laws", "code-quality", "conway", "hyrum", "dry", "review"],
+      "skills": "./skills",
       "strict": false
     }
   ]
