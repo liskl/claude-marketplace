@@ -28,8 +28,8 @@
     {
       "name": "software-eng-laws",
       "source": {
-        "source": "github",
-        "repo": "liskl/claude-marketplace",
+        "source": "git-subdir",
+        "url": "liskl/claude-marketplace",
         "path": "plugins/software-eng-laws"
       },
       "description": "Audit a repository against 56 software engineering laws (Conway, Hyrum, DRY, CAP, etc.) and produce a per-law findings report with evidence citations and a scorecard",
