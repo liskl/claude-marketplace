@@ -5,8 +5,8 @@
     "email": "loren@lisk.org"
   },
   "metadata": {
-    "description": "A collection of metaskills for collaborative discovery, PRD creation, skill building, and software engineering law audits",
-    "version": "1.1.0"
+    "description": "A collection of metaskills for collaborative discovery, PRD creation, skill building, software engineering law audits, and Whatbox/rTorrent control",
+    "version": "1.2.0"
   },
   "plugins": [
     {
@@ -39,6 +39,23 @@
       },
       "category": "quality",
       "keywords": ["audit", "software-engineering-laws", "code-quality", "conway", "hyrum", "dry", "review"],
+      "skills": "./skills",
+      "strict": false
+    },
+    {
+      "name": "whatbox-rtorrent",
+      "source": {
+        "source": "git-subdir",
+        "url": "liskl/claude-marketplace",
+        "path": "plugins/whatbox-rtorrent"
+      },
+      "description": "List and control torrents on a Whatbox seedbox via rTorrent XML-RPC (list, start, stop, pause, resume) using stdlib-only Python",
+      "version": "1.0.0",
+      "author": {
+        "name": "Loren Lisk"
+      },
+      "category": "tools",
+      "keywords": ["whatbox", "rtorrent", "torrent", "seedbox", "xmlrpc"],
       "skills": "./skills",
       "strict": false
     }

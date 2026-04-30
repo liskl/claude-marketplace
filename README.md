@@ -31,10 +31,16 @@ Slash commands for collaborative discovery, PRD creation, and skill building.
 - `/metaskills:create-prd` — turns ideas (rough or detailed) into a structured PRD. Adapts depth to input fidelity and outputs Obsidian-optimized or plain markdown.
 - `/metaskills:skill-builder` — interview-driven generator that extracts tacit knowledge from a domain expert and emits a Claude Code skill or slash command.
 
+### `whatbox-rtorrent`
+List and control torrents on a Whatbox seedbox via rTorrent XML-RPC. Supports `list`, `start`, `stop`, `pause`, and `resume`. Stdlib-only Python (3.10+) — no `pip install` required.
+
+Requires `WHATBOX_USERNAME`, `WHATBOX_PASSWORD`, and `WHATBOX_HOSTNAME` in the environment or a `.env` file in the project root. See the skill's `SKILL.md` for usage details.
+
 ## Layout
 
 ```
 .claude-plugin/marketplace.json   # marketplace manifest
 commands/                         # metaskills plugin (slash commands)
 plugins/software-eng-laws/        # software-eng-laws plugin (skill + scripts)
+plugins/whatbox-rtorrent/         # whatbox-rtorrent plugin (skill + scripts)
 ```
